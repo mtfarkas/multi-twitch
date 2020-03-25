@@ -62,6 +62,11 @@
 
     videoIds = videoIdsStr.split(',');
 
+    if (videoIds.length < 2 || videoIds.length > 4) {
+      window.location.href = '';
+      return;
+    }
+
     videoIds.forEach(id => {
       const containerId = `video-${id}-${randomId(16)}`;
       const newDiv = document.createElement('div');
