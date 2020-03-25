@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+.container .navbar {
+  background-color: var(--element-bg);
+  height: 50px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 1px 2px var(--box-shadow-color), 0 0px 2px var(--box-shadow-color);
+          box-shadow: 0 1px 2px var(--box-shadow-color), 0 0px 2px var(--box-shadow-color);
+}
+
+.container .navbar #brand {
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.container .navbar #credits {
+  font-size: 0.8em;
+  letter-spacing: 0.8px;
+}
+
+.container .options-container {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.container .options-container .options {
+  background-color: var(--element-bg);
+  -webkit-box-shadow: 0 1px 2px var(--box-shadow-color), 0 0px 2px var(--box-shadow-color);
+          box-shadow: 0 1px 2px var(--box-shadow-color), 0 0px 2px var(--box-shadow-color);
+  padding: 15px;
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .options-container .options .twitch-link-input,
+.container .options-container .options #start-btn {
+  width: 100%;
+}
+
+.container .options-container .options .twitch-link-input.invalid {
+  border: tomato;
+  background-color: #ff8585;
+}
+
+.container .options-container .options h1 {
+  margin: 0;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container .options-container .options > * {
+  margin: 10px 0;
+}
+
+.container .options-container .options > *:first-child {
+  margin-top: 0;
+}
+
+.container .options-container .options > *:last-child {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=index.css.map */
