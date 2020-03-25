@@ -56,7 +56,7 @@
     const videoIdsStr = params.get('v');
 
     if (!videoIdsStr) {
-      window.location.href = '/';
+      window.location.href = '';
       return;
     }
 
