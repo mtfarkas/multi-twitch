@@ -8,6 +8,12 @@
   gap: 10px;
 }
 
+.container #netlify-badge {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
 .container .navbar {
   background-color: var(--element-bg);
   height: 50px;
