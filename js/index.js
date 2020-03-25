@@ -38,7 +38,7 @@
 
     const values = urls.map(val => val.substr(val.lastIndexOf('/') + 1)).filter(val => !!val);
 
-    window.location.href = `watch.html?v=${values.join(',')}`;
+    window.location.href = `watch?v=${values.join(',')}`;
   }
 
   docReady(() => {
